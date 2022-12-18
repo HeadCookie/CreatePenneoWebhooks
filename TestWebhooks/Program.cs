@@ -17,3 +17,4 @@ webhook.Persist(c);
 var confirmation = Prompt.Bind<Confirmation>();
 
 Console.WriteLine(webhook.Confirm(c, confirmation.Token) ? "Success!" : $"Error: {c.LastResponseContent}");
+Console.ReadKey();
